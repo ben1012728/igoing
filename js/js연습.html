@@ -6,17 +6,18 @@
 </head>
 <body>
   <h1><a href="index.html">web</a></h1>
-<input class= "night_day" type="button" value="night" onclick="
-if (document.querySelector('.night_day').value ==='night') {
- document.querySelector('body').style.backgroundColor='black';
- document.querySelector('body').style.color='white';
- document.querySelector('.night_day').value = 'day';
-} else {
- document.querySelector('body').style.backgroundColor='white';
- document.querySelector('body').style.color='black';
- document.querySelector('.night_day').value = 'night';
-}
-">
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body')
+  if (this.value ==='night') {
+   target .style.backgroundColor='black';
+   target.style.color='white';
+   this.value = 'day';
+  } else {
+   target.style.backgroundColor='white';
+   target.style.color='black';
+   this.value = 'night';
+  }
+  ">
 <ol>
   <li><a href="1.html">html</a></li>
   <li><a href="2.html">css</a></li>
@@ -37,4 +38,5 @@ if (document.querySelector('.night_day').value ==='night') {
       유사성이 많다. 자바스크립트는 ECMAScript의 표준 사양을 가장 잘 구현한 언어로 인정받고 있으며
        ECMAScript 5 (ES5) 까지는 대부분의 브라우저에서 기본적으로 지원되었으나 ECMAScript 6 
        이후부터는 브라우저 호환성을 위해 트랜스파일러로 컴파일된다. [3]</p>
+       
 </html>
